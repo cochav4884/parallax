@@ -10,10 +10,10 @@
 
   <title>Day 7 Parallax</title>
   <link rel="stylesheet" href="css/styles.css">
-<!-- use defer at the end of script you keep in your header or place each script at the bottom of the page above </body> -->
+  <!-- use defer at the end of script you keep in your header or place each script at the bottom of the page above </body> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer>
-</script>
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer>
+  </script>
 
 
 </head>
@@ -23,7 +23,8 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,16 +37,21 @@
             <a class="nav-link" href="#" target="_blank">Local Fun!</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Dropdown
             </a>
             <ul class="dropdown-menu text-success" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#" target="_blank">California Beaches</a></li>
+              <li><a class="dropdown-item"
+                  href="https://www.google.com/search?q=california+beaches&rlz=1C1CHZN_enUS941US941&sxsrf=APq-WBtVWqk5e7bLmq7ckCp60lQf387JSw:1650947623143&source=lnms&tbm=isch&sa=X&sqi=2&ved=2ahUKEwjJ1PqU87D3AhXzuZUCHduJDfsQ_AUoA3oECAEQBQ&biw=1920&bih=937&dpr=1#imgrc=iZPVN0_WsnGgAM"
+                  target="_blank">California Beaches</a></li>
               <li><a class="dropdown-item" href="#" target="_blank">Swimwear</a></li>
               <li><a class="dropdown-item" href="#" target="_blank">Surfboards</a></li>
               <li><a class="dropdown-item" href="#" target="_blank">Surfboard Care</a></li>
               <li><a class="dropdown-item" href="#" target="_blank">Local Food!</a></li>
-              <li><hr class="dropdown-divider bg-dark"></li>
+              <li>
+                <hr class="dropdown-divider bg-dark">
+              </li>
               <li><a class="dropdown-item" href="#" target="_blank">Local Instructors</a></li>
             </ul>
           </li>
@@ -62,73 +68,78 @@
   </nav>
 
   <a name="#top"></a>
-<main class="container-fluid">
-  <p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+  <main class="container-fluid">
 
-<div class="parallax d-flex justify-content-evenly align-items-center"></div>
+    <section class="california-beaches parallax">
+      <div class="content">
+        <h1 class="fw-bold text-light fs-1">CALIFORNIA BEACHES <br> FAMILY FUN!</h1>
+        <a href="https://www.google.com/maps/search/california+beaches/@36.8261826,-122.8241442,8z/data=!3m1!4b1"
+          target="_blank" class="btn btn-outline-info text-light fs-5">CALIFONIA BEACHES</a></p>
+        <p class="fs-4 fw-regular text-light"> A look at our California beaches. Name from Northern California to Name
+          Southern Califonia. Choose a beach from your past and a new beach to explore in your future.
+      </div>
+    </section>
 
-<div style="height:1000px;background-color:red;font-size:36px">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-</div>
-
-  <div class="jumbotron width=1000px">
-    <div class="container-fluid p-5">
-      <h1 class="fw-bold text-light fs-1">CALIFORNIA BEACHES <br> FAMILY FUN!</h1>
-      <p class="fs-4 fw-regular text-light"> A look at our California beaches. Name from Northern California to Name Southern Califonia. Choose a beach from your past and a new beach to explore in your future.<br>
-        <a href="https://www.galaxytheatres.com/movie-theater/riverbank" target="_blank"
-          class="btn btn-outline-info text-light fs-5">CALIFONIA BEACHES</a></p>
-    </div>
-  </div>
-
-  <div class="jumbotron width=1000px">
-    <div class="container-fluid p-5">
-      <h1 class="fw-bold text-light fs-1">SWIMWEAR <br> SELECT & ENJOY!</h1>
-      <p class="fs-4 fw-regular text-light">Going to the beach is not just about having fun and hitting waves...it's about the style in which you take with you! <br>
+    <section class="swimwear parallax">
+      <div class="content">
+        <h1 class="fw-bold text-light fs-1">SWIMWEAR <br> SELECT & ENJOY!</h1>
         <a href="https://www.galaxytheatres.com/movie-theater/riverbank" target="_blank"
           class="btn btn-outline-info text-light fs-5">SWIMWEAR</a></p>
-    </div>
-  </div>
+        class="btn btn-outline-info text-light fs-5">CALIFONIA BEACHES</a></p>
+        <p class="fs-4 fw-regular text-light">Going to the beach is not just about having fun and hitting waves...it's
+          about the style in which you take with you!
+      </div>
+    </section>
 
-  <div class="jumbotron width=1000px">
-    <div class="container-fluid p-5">
-      <h1 class="fw-bold text-light fs-1">SURFBOARDS <br> SURFBOARDS COME IN MANY DIFFERENT COLORS & SIZES</h1>
-      <p class="fs-4 fw-regular text-light">Choosing a board takes time. Your boards speaks to your personality and how outgoing you can be. Sizing depends on the level of surfer you are and color tells others how serious you are as a surfer. <br>
+    <section class="surfboards parallax">
+      <div class="content">
+        <h1 class="fw-bold text-light fs-1">SURFBOARDS <br> SURFBOARDS COME IN MANY DIFFERENT COLORS & SIZES</h1>
         <a href="https://www.galaxytheatres.com/movie-theater/riverbank" target="_blank"
           class="btn btn-outline-info text-light fs-5">SURFBOARDS</a></p>
-    </div>
-  </div>
+        <p class="fs-4 fw-regular text-light">Choosing a board takes time. Your boards speaks to your personality and
+          how outgoing you can be. Sizing depends on the level of surfer you are and color tells others how serious you
+          are as a surfer.
+      </div>
+    </section>
 
-  <div class="jumbotron width=1000px">
-    <div class="container-fluid p-5">
-      <h1 class="fw-bold text-light fs-1">SURFBOARD CARE <br> KEEP SAFE...MAINTENENCE IS KEY!</h1>
-      <p class="fs-4 fw-regular text-light">Safe surfing depends on how diligent you are in surfboard maintenece. You wouldn't drive your car without oil in it. Or, take a bike ride and not have handlebars. Waxing your board helps keep surfing those waves smooth and professional! <br>
+    <section class="surfboard-care parallax">
+      <div class="content">
+        <h1 class="fw-bold text-light fs-1">SURFBOARD CARE <br> KEEP SAFE...MAINTENENCE IS KEY!</h1>
         <a href="https://www.galaxytheatres.com/movie-theater/riverbank" target="_blank"
           class="btn btn-outline-info text-light fs-5">SURFBOARD CARE</a></p>
-    </div>
-  </div>
+        <p class="fs-4 fw-regular text-light">Safe surfing depends on how diligent you are in surfboard maintenece. You
+          wouldn't drive your car without oil in it. Or, take a bike ride and not have handlebars. Waxing your board
+          helps keep surfing those waves smooth and professional!
+      </div>
+    </section>
 
-  <div class="jumbotron width=1000px">
-    <div class="container-fluid p-5">
-      <h1 class="fw-bold text-light fs-1">LOCAL FOOD! <br> HUNGRY...PLENTY TO CHOOSE FROM!</h1>
-      <p class="fs-4 fw-regular text-light">Long day at the beach? Need energy to hit the waves? Need a break from the sun? Head over to some local venders and restaurants for some nutritional fill! <br>
+    <section class="surfboard-care parallax">
+      <div class="content">
+        <h1 class="fw-bold text-light fs-1">LOCAL FOOD! <br> HUNGRY...PLENTY TO CHOOSE FROM!</h1>
         <a href="https://www.galaxytheatres.com/movie-theater/riverbank" target="_blank"
-          class="btn btn-outline-info text-light fs-5">LOCAL FOOD!</a></p>
-    </div>
-  </div>
+        class="btn btn-outline-info text-light fs-5">LOCAL FOOD!</a></p>
+      <p class="fs-4 fw-regular text-light">Long day at the beach? Need energy to hit the waves? Need a break from the
+            sun? Head over to some local venders and restaurants for some nutritional fill!
+        </div>
+    </section>
 
-  <div class="jumbotron width=1000px">
-    <div class="container-fluid p-5">
-      <h1 class="fw-bold text-light fs-1">LOCAL INTRUCTORS <br> NOT SURE HOW TO SURF...FIND AN INSTRUCTOR THAT FITS YOUR STYLE</h1>
-      <p class="fs-4 fw-regular text-light">Surfing for the first time...remember your first bike ride or putting on a pair of skates for the first time? Grass, cement, water... all fun comes with a solid contact with you fall. Get tips and learn how to ski with a local professional. You still sit on a bike or throw on a pair of skates once in a while...why not step onto a board and surf some ways! <br>
-        <a href="https://www.galaxytheatres.com/movie-theater/riverbank" target="_blank"
-          class="btn btn-outline-info text-light fs-5">LOCAL INSTRUCTORS</a></p>
-    </div>
-  </div>
+    <section class="surfboard-care parallax">
+      <div class="content">
+        <h1 class="fw-bold text-light fs-1">LOCAL INTRUCTORS <br> NOT SURE HOW TO SURF...FIND AN INSTRUCTOR THAT FITS YOUR STYLE</h1>
+          <a href="https://www.galaxytheatres.com/movie-theater/riverbank" target="_blank"
+            class="btn btn-outline-info text-light fs-5">LOCAL INSTRUCTORS</a></p>
+        <p class="fs-4 fw-regular text-light">Surfing for the first time...remember your first bike ride or putting on a
+          pair of skates for the first time? Grass, cement, water... all fun comes with a solid contact with you fall.
+          Get tips and learn how to ski with a local professional. You still sit on a bike or throw on a pair of skates
+          once in a while...why not step onto a board and surf some ways!
+        </div>
+    </section>
 
-<a href="#">Back to Top</a>
-</main>
+
+
+
+    <a href="#">Back to Top</a>
+  </main>
 
 </body>
 
