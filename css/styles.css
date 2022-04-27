@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(39, 11, 39);
+    background: rgb(39, 11, 39);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -71,27 +71,40 @@ ul li:hover {
 
 }
 
-.california-beaches {
+.la-jolla {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
 
-.surfboards {
+.santa-monica {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
 
-.surfboard-care {
+.coronado {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
 
-.local-instructors {
+.carmel {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
 
-.swimwear {
+.moonstone {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
 
-.local-food {
+.salt-creek {
+    border: 5px solid rgb(13, 202, 240, 0.5);
+}
+
+.sand-dollar {
+    border: 5px solid rgb(13, 202, 240, 0.5);
+}
+.mcclures {
+    border: 5px solid rgb(13, 202, 240, 0.5);
+}
+.pebble {
+    border: 5px solid rgb(13, 202, 240, 0.5);
+}
+.san-gregorio {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
 
