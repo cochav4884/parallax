@@ -60,14 +60,18 @@ ul li:hover {
     margin-top: 20px;
 }
 
-/* add sub-sections for each jumbotron: California Beaches, Swimwear, Surfboards, Surfboard Care, Local Food, Local Instructor  */
+.text-back {
+    border: 5px solid rgb(13, 202, 240, 0.5);
+    padding: 15px;
+}
 
+/* add sub-sections for each section for each of the 10 beaches  */
 .content {
     background-color: rgb(39, 11, 39, 0.3);
     text-align: center;
     width: 1500px;
     padding: 50px;
-    height: 550px;
+    height: 700px;
 
 }
 
@@ -98,12 +102,15 @@ ul li:hover {
 .sand-dollar {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
+
 .mcclures {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
+
 .pebble {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
+
 .san-gregorio {
     border: 5px solid rgb(13, 202, 240, 0.5);
 }
@@ -114,7 +121,7 @@ h1 {
 }
 
 p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
     font-size: 40px;
     color: rgb(255, 255, 255);
