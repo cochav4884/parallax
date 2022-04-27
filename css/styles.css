@@ -31,6 +31,14 @@ ul li:hover {
     color: rgb(255, 255, 255) !important;
 }
 
+.list {
+    text-decoration: none;
+    margin: 5px;
+    color: rgb(13, 202, 240);
+    margin-left: 40px;
+    padding-left: 50px;
+}
+
 .parallax {
     /* The image used */
     background-image: url("../img/CA\ Main\ Beach.jpg");
