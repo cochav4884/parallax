@@ -36,7 +36,7 @@ ul li:hover {
     background-image: url("../img/CA\ Main\ Beach.jpg");
 
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 600px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -55,11 +55,11 @@ ul li:hover {
 /* add sub-sections for each jumbotron: California Beaches, Swimwear, Surfboards, Surfboard Care, Local Food, Local Instructor  */
 
 .content {
-    background-color: rgb(39, 11, 39, 0.5);
+    background-color: rgb(39, 11, 39, 0.3);
     text-align: center;
     width: 1500px;
     padding: 50px;
-    height: 500px;
+    height: 550px;
 
 }
 
