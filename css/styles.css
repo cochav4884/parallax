@@ -48,6 +48,8 @@ ul li:hover {
     justify-content: space-evenly;
     /* align-items: space-evenly */
     align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /* add sub-sections for each jumbotron: California Beaches, Swimwear, Surfboards, Surfboard Care, Local Food, Local Instructor  */
@@ -55,40 +57,44 @@ ul li:hover {
 .content {
     background-color: rgb(39, 11, 39, 0.5);
     text-align: center;
+    width: 1500px;
+    padding: 50px;
+    height: 500px;
+
 }
 
 .california-beaches {
-    border: 5px solid rgb(13, 202, 240);
-    height: 200px;
-    width: auto;
-}
-
-.swimwear {
-    border: 5px solid rgb(13, 202, 240);
-    height: 200px;
-    width: auto;
+    border: 5px solid rgb(13, 202, 240, 0.5);
 }
 
 .surfboards {
-    border: 5px solid rgb(13, 202, 240);
-    height: 200px;
-    width: auto;
+    border: 5px solid rgb(13, 202, 240, 0.5);
 }
 
 .surfboard-care {
-    border: 5px solid rgb(13, 202, 240);
-    height: 200px;
-    width: auto;
-}
-
-.local-food {
-    border: 5px solid rgb(13, 202, 240);
-    height: 200px;
-    width: auto;
+    border: 5px solid rgb(13, 202, 240, 0.5);
 }
 
 .local-instructors {
-    border: 5px solid rgb(13, 202, 240);
-    height: 200px;
-    width: auto;
+    border: 5px solid rgb(13, 202, 240, 0.5);
+}
+
+.swimwear {
+    border: 5px solid rgb(13, 202, 240, 0.5);
+}
+
+.local-food {
+    border: 5px solid rgb(13, 202, 240, 0.5);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 8px 8px rgb(12, 12, 12);
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
 }
