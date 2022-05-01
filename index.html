@@ -1,18 +1,287 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Day 7 Parallax</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- use defer at the end of script you keep in your header or place each script at the bottom of the page above </body> -->
+  <script src="https://kit.fontawesome.com/16ef79e6fd.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer>
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
+</head>
 
-    <title>Hello, world!</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  </body>
+<body>
+  <!-- add navbar-expand-lg to have buttons show/take away to just leave hamburger menu -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-info" href="#">NAVBAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- me-auto = left aligned ms-auto = right aligned -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.californiabeaches.com/top-10-beaches-in-california/"
+              target="_blank">California Beaches</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Beach Ready
+            </a>
+            <ul class="dropdown-menu text-success" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item"
+                  href="https://www.google.com/search?q=surfboard&rlz=1C1CHZN_enUS941US941&sxsrf=ALiCzsZqJO-_YuVscunxS7IjjIQ5P8ZKmQ:1651187936675&source=lnms&tbm=shop&sa=X&sqi=2&ved=2ahUKEwim0LCz8rf3AhXYZ94KHbfAAjAQ_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1"
+                  id="02" target="_blank">Surfboards</a></li>
+              <li><a class="dropdown-item" href="https://www.harboursurfboards.com/surfboard-care" id="03"
+                  target="_blank">Surfboard
+                  Care</a></li>
+              <li><a class="dropdown-item" href="https://getfoamie.com/surf-camps-california/" id="04"
+                  target="_blank">Surf Camps</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="https://youtu.be/_ZkfD0k8F2c" target="_blank" id="05">Wetsuit 4
+                  Surfing</a></li>
+              <li><a class="dropdown-item" href="https://panamajack.com/blogs/at-the-beach" target="_blank">Beach
+                  Ready</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <a name="top"></a>
+  <a class="list" href="#S01">LA JOLLA SHORES BEACH</a>
+  <a class="list" href="#S02">SANTA MONICA STATE BEACH-SOUTH BEACH</a>
+  <a class="list" href="#S03">CORONADO BEACH</a>
+  <a class="list" href="#S04">CARMEL CITY BEACH</a>
+  <a class="list" href="#S05">MOONSTONE BEACH</a>
+  <a class="list" href="#S06">SALT CREEK BEACH</a>
+  <a class="list" href="#S07">SAND DOLLAR BEACH</a>
+  <a class="list" href="#S08">MCCLURES BEACH</a>
+  <a class="list" href="#S09">PEBBLE BEACH</a>
+  <a class="list" href="#S10">SAN GREGORIO STATE BEACH</a>
+
+  <main class="container-fluid">
+
+    <section class="la-jolla parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S01" class="fw-bold fs-1">LA JOLLA SHORES BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBu8t3gxh3VbNxKMM0DI6TtFQ5M6CQ:1651087552621&q=la+jolla+beach+california+local+food&rflfq=1&num=10#rlfi=hd:;si:;mv:[[32.8562738,-117.25329339999999],[32.8313276,-117.2779425]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:9"
+            target="_blank" class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/la jolla3.jpg" alt="la jolla3" width="400px" height="200px">
+          <img src="img/la jolla.jpg" alt="la jolla" width="400px" height="200px">
+          <img src="img/la jolla2.jpg" alt="la jolla2" width="400px" height="200px">
+          <p> From downtown La Jolla head north on Torrey Pines Road then turn north onto La Jolla Shores Drive then
+            turn
+            left onto Calle Frescota which leads to the lot entrance. <br> <a href="#top"
+              class="btn btn-outline-info text-light fs-5">Back to Top</a> </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="santa-monica parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S02" class="fw-bold text-light fs-1">SANTA MONICA STATE BEACH-SOUTH BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBs3Bmtas9CGtqIExKVMOqfX3gMbFg:1651087611398&q=santa+monica+state+beach+south+beach+california+local+food&rflfq=1&num=10#rlfi=hd:;si:;mv:[[34.0247688,-118.4628681],[34.0057565,-118.5157818]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3american_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3seafood_1restaurant!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e5!2m1!1e1!2m1!1e3!3sIAEqAlVT,lf:1,lf_ui:9"
+            target="_blank" class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/santa monica.webp" alt="santa monica" width="400px" height="200px">
+          <img src="img/santa monica2.jpg" alt="santa monica2" width="400px" height="200px">
+          <img src="img/santa monica3.jpg" alt="santa monica3" width="400px" height="200px">
+          <p>The Santa Monica Pier has the Pacific Park Amusement Park complete with rides and arcade games,
+            restaurants,
+            shops, and the Santa Monica Pier Aquarium. Parking lots for South Beach are located along Ocean Avenue and
+            Barnard Way. The main park centered on South Beach is at the west end of Ocean Park Boulevard. <br> <a
+              href="#top" class="btn btn-outline-info text-light fs-5">Back to Top</a> </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="coronado parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S03" class="fw-bold text-light fs-1">CORONADO BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBsF80DhdV8gwqJ1eCRNj2AChs8rag:1651087636977&q=coronado+beach+california+local+food&rflfq=1&num=10#rlfi=hd:;si:;mv:[[32.6884011,-117.17452859999999],[32.679242099999996,-117.18856339999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3american_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3seafood_1restaurant!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e5!2m1!1e1!2m1!1e3!3sIAEqAlVT,lf:1,lf_ui:9"
+            target="_blank" class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/coronado2.jpg" alt="coronado2" width="400px" height="200px">
+          <img src="img/coronado.jpg" alt="coronado" width="400px" height="200px">
+          <img src="img/coronado3.webp" alt="coronado3" width="400px" height="200px">
+          <p>Coronado Beach, aka Central Beach, starts at the famous Hotel del Coronado and continues north to Sunset
+            Park. At the north end of the beach in front of Sunset Park dog owners bring their pets to roam freely in an
+            area dubbed Dog Run Beach. <br> <a href="#top" class="btn btn-outline-info text-light fs-5">Back to Top</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="carmel parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S04" class="fw-bold text-light fs-1">CARMEL CITY BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBvN5SKHYAqi0XGQJTDuc0eZpsTmWg:1651087656813&q=carmel+city+beach+california+local+food&rflfq=1&num=10#rlfi=hd:;si:;mv:[[36.556582999999996,-121.92007880000001],[36.552077499999996,-121.92656919999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3italian_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3seafood_1restaurant!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e5!2m1!1e1!2m1!1e3!3sIAEqAlVT,lf:1,lf_ui:9"
+            target="_blank" class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/carmel.jpg" alt="carmel" width="400px" height="200px">
+          <img src="img/carmel2.jpg" alt="carmel2" width="400px" height="200px">
+          <img src="img/carmel3.jpg" alt="carmel3" width="400px" height="200px">
+          <p> Carmel City Beach is a long, wide, white sand beach that is hard to beat anywhere on the California
+            Central
+            Coast. It can be packed here on sunny days, but this part of the coast is often cool and cloudy making it
+            easy
+            to find your own space on this large beach. <br> <a href="#top"
+              class="btn btn-outline-info text-light fs-5">Back to Top</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="moonstone parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S05" class="fw-bold text-light fs-1">MOONSTONE BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBsNu5_uQHV4nedGpoBOubodwWHV4A:1651087681315&q=moonstone+beach+california+local+food&rflfq=1&num=10#rlfi=hd:;si:;mv:[[35.585743799999996,-121.0772427],[35.561288499999996,-121.1232311]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3american_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3seafood_1restaurant!1m4!1u2!2m2!2m1!1e1!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e5!2m1!1e3!3sIAEqAlVT,lf:1,lf_ui:9"
+            target="_blank" class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/moonstone.jpg" alt="moonstone" width="400px" height="200px">
+          <img src="img/moonstone2.jpg" alt="moonstone2" width="400px" height="200px">
+          <img src="img/moonstone3.jpg" alt="monnstone3" width="400px" height="200px">
+          <p> Moonstone Beach is along Moonstone Beach Drive which parallels Highway 1 in northern Cambria, California.
+            The shoreline here is made up of brown sandy coves separated by rocky bluffs. At the back of the beach there
+            are large drift logs and rocks to rest on. <br> <a href="#top"
+              class="btn btn-outline-info text-light fs-5">Back to Top</a> </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="salt-creek parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S06" class="fw-bold text-light fs-1">SALT CREEK BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBuuoMnhknrjPGYJMmeLkAVtLDypnQ:1651087745353&q=salt+creek+beach+california+local+food&rflfq=1&num=10#rlfi=hd:;si:;mv:[[33.4901513,-117.6825854],[33.4638151,-117.72896739999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3american_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3seafood_1restaurant!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e5!2m1!1e1!2m1!1e3!3sIAEqAlVT,lf:1,lf_ui:9"
+            target="_blank" class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/salt creek.jpg" alt="salt creek" width="400px" height="200px">
+          <img src="img/salt creek2.webp" alt="salt creek2" width="400px" height="200px">
+          <img src="img/salt creek3.jpg" alt="salt creek3" width="400px" height="200px">
+          <p>Salt Creek Beach Park is a popular Orange County park located in Dana Point, CA. This wide sandy beach is
+            directly below the Ritz-Carlton Laguna Niguel beach resort, the Ritz Cove gated development, and the Monarch
+            Beach Golf Links golf course. <br> <a href="#top" class="btn btn-outline-info text-light fs-5">Back to
+              Top</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sand-dollar parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S07" class="fw-bold text-light fs-1">SAND DOLLAR BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBuLu49qIENqXe7KbkUTKWENqaGPHg:1651087771622&q=sand+dollar+beach+california+local+food&rflfq=1&num=10#rlfi=hd:;si:;mv:[[36.3127037,-121.0592624],[35.526395799999996,-121.8508603]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3american_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3seafood_1restaurant!1m4!1u2!2m2!2m1!1e1!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e5!2m1!1e3!3sIAEqAlVT,lf:1,lf_ui:9"
+            target="_blank" class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/sand dollar.jpg" alt="sand dollar" width="400px" height="200px">
+          <img src="img/sand dollar2.jpg" alt="sand dollar2" width="400px" height="200px">
+          <img src="img/sand dollar4.jpg" alt="sand dollar3" width="400px" height="200px">
+          <p>Sand Dollar Day-Use Picnic Area is along the southern Big Sur coast about half-way between Cambria and Big
+            Sur Station. The picnic area and Sand Dollar Beach are popular in the summer months. Surfers ride the waves
+            here as this is one of the few worthy surf spots in all of Big Sur. <br> <a href="#top"
+              class="btn btn-outline-info text-light fs-5">Back to Top</a> </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mcclures parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S08" class="fw-bold text-light fs-1">MCCLURES BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBvGN_kfWRCBxU_gdDIhXFu3q2rJXg:1651087795023&q=mcclures+beach+california+local+food&rflfq=1&num=10#rlfi=hd:;si:;mv:[[38.4263037,-122.77261419999999],[38.0187828,-123.0635878]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3seafood_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3american_1restaurant!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e5!2m1!1e1!2m1!1e3!3sIAEqAlVT,lf:1,lf_ui:9"
+            target="_blank" class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/mcclures.webp" alt="mcclures" width="400px" height="200px">
+          <img src="img/mcclures2.jpg" alt="mcclures2" width="400px" height="200px">
+          <img src="img/mcclures3.jpg" alt="mcclures3" width="400px" height="200px">
+          <p>McClures Beach isn't that long, so take time to explore the entire beach looking for driftwood and other
+            beachcombing items. At low tide you'll discover tidepools to investigate. Be careful near the waves here
+            because the rip currents are fast and sneaker waves can knock you down. Never turn your back to the ocean.
+            <br> <a href="#top" class="btn btn-outline-info text-light fs-5">Back to Top</a> </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pebble parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S09" class="fw-bold text-light fs-1">PEBBLE BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBuF-1DQtDLFVjDAQ0b7xYeYMmfDfA:1651087817051&q=pebble+beach+of+crescent+city+california+local+food&rflfq=1&num=10&rldimm=6952862047836207214#rlfi=hd:;si:;mv:[[41.8271538,-124.161135],[41.746089999999995,-124.23486500000001]]"
+            class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/pebble.jpg" alt="pebble" width="400px" height="200px">
+          <img src="img/pebble2.jpg" alt="pebble2" width="400px" height="200px">
+          <img src="img/pebble3.jpg" alt="pebble3" width="400px" height="200px">
+          <p>Pebble Beach is a long string of connected coves in Crescent City in Northern California. The beach has
+            numerous parking areas all along South and North Pebble Beach Drive between Battery Point and Point St.
+            George. <br> <a href="#top" class="btn btn-outline-info text-light fs-5">Back to Top</a> </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="san-gregorio parallax">
+      <div class="content">
+        <div class="text-back">
+          <h1 id="S10" class="fw-bold text-light fs-1">SAN GREGORIO STATE BEACH</h1>
+          <a href="https://www.google.com/search?rlz=1C1CHZN_enUS941US941&tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=APq-WBvqqZMnb0FMQkxqXxZOva8je3_1jg:1651087847570&q=san+gregorio+state+beach+california+local+food&rflfq=1&num=10#rlfi=hd:;si:;mv:[[37.5491445,-122.2505261],[37.132503199999995,-122.52802279999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3american_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3mexican_1restaurant!1m4!1u2!2m2!2m1!1e1!1m4!1u1!2m2!1m1!1e1!1m4!1u1!2m2!1m1!1e2!1m4!1u22!2m2!21m1!1e1!2m1!1e2!2m1!1e5!2m1!1e1!2m1!1e3!3sIAEqAlVT,lf:1,lf_ui:9"
+            target="_blank" class="btn btn-outline-info text-light fs-5">LOCAL FOOD</a></p>
+          <img src="img/san gregorio.jpg" alt="san gregorio" width="400px" height="200px">
+          <img src="img/san gregorio2.jpg" alt="san gregorio2" width="400px" height="200px">
+          <img src="img/san gregorio3.jpg" alt="san gregorio3" width="400px" height="200px">
+          <p>San Gregorio State Beach is a stunning beach in a valley about 10 miles south of Half Moon Bay and a short
+            drive from Silicon Valley in the South Bay Area. It has a big parking lot and a popular picnic area on the
+            bluff above the beach. <br> <a href="#top" class="btn btn-outline-info text-light fs-5">Back to Top</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-secondary">
+      <div>
+        <a href="https://www.facebook.com/nationalparkservice" target="_blank"><i
+            class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/nationalparkservice" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://twitter.com/natlparkservice" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/nationalparkservice/" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.flickr.com/photos/nationalparkservice" target="_blank"><i
+            class="fa-brands fa-flickr"></i></a>
+
+
+
+        <div class="text-light">&copy; 2022 | MFCP</div>
+
+        <a class="text-info" href="#top">Back to Top</a>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+
 </html>
